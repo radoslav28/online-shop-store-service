@@ -1,7 +1,7 @@
 package com.onlineshop.store.api.operations.item.getall;
 
 import com.onlineshop.store.api.base.ProcessorResult;
-import com.onlineshop.store.api.model.Item;
+import com.onlineshop.store.api.model.ItemModel;
 import lombok.*;
 import java.util.List;
 @Getter
@@ -10,5 +10,5 @@ import java.util.List;
 @AllArgsConstructor
 @Builder
 public class GetItemsResult implements ProcessorResult {
-    private List<Item> items;
+    private List<ItemModel> itemModels;
 }

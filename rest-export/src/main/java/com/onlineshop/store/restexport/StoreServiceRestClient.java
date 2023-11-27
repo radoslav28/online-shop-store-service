@@ -11,8 +11,8 @@ import com.onlineshop.store.api.operations.item.getbyids.GetItemsByIdsResult;
 import com.onlineshop.store.api.operations.item.getbytag.GetItemsByTagResult;
 import com.onlineshop.store.api.operations.item.update.UpdateItemInput;
 import com.onlineshop.store.api.operations.item.update.UpdateItemResult;
-import com.onlineshop.store.api.operations.multimedia.addtoitem.AddMultimediaToItemInput;
-import com.onlineshop.store.api.operations.multimedia.addtoitem.AddMultimediaToItemResult;
+import com.onlineshop.store.api.operations.multimedia.AddMultimediaToItemInput;
+import com.onlineshop.store.api.operations.multimedia.AddMultimediaToItemResult;
 import com.onlineshop.store.api.operations.multimedia.getbyitem.GetMultimediaByItemResult;
 import com.onlineshop.store.api.operations.tag.create.CreateTagInput;
 import com.onlineshop.store.api.operations.tag.create.CreateTagResult;
@@ -25,7 +25,6 @@ import feign.Param;
 import feign.RequestLine;
 
 import java.util.List;
-import java.util.UUID;
 
 @Headers({"Content-Type: application/json"})
 public interface StoreServiceRestClient {
@@ -69,6 +68,4 @@ public interface StoreServiceRestClient {
     @RequestLine("POST /multimedia")
     AddMultimediaToItemResult addMultimediaToItem(AddMultimediaToItemInput input);
 
-    @RequestLine("GET /multimedia?itemId={itemId}")
-    GetMultimediaByItemResult getMultimediaForItem (@Param("itemId") String itemId);
 }

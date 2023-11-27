@@ -1,4 +1,4 @@
-package com.onlineshop.store.api.operations.multimedia.addtoitem;
+package com.onlineshop.store.api.operations.multimedia;
 
 import com.onlineshop.store.api.base.Processor;
 

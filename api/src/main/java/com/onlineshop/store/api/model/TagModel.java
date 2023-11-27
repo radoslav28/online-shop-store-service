@@ -1,19 +1,19 @@
 package com.onlineshop.store.api.model;
 
+import jakarta.validation.constraints.NotBlank;
 import lombok.*;
-
-import java.util.List;
+import org.hibernate.validator.constraints.UUID;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Item {
+public class TagModel {
+
+    @UUID
     private String id;
+
+    @NotBlank
     private String title;
-    private String description;
-    private Vendor vendor;
-    private List<Multimedia> multimedia;
-    private List<Tag> tags;
 }

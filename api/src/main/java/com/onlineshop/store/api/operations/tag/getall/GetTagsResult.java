@@ -1,7 +1,7 @@
 package com.onlineshop.store.api.operations.tag.getall;
 
 import com.onlineshop.store.api.base.ProcessorResult;
-import com.onlineshop.store.api.model.Tag;
+import com.onlineshop.store.api.model.TagModel;
 import lombok.*;
 
 import java.util.List;
@@ -11,5 +11,5 @@ import java.util.List;
 @AllArgsConstructor
 @Builder
 public class GetTagsResult implements ProcessorResult {
-    private List<Tag> tags;
+    private List<TagModel> tagModels;
 }

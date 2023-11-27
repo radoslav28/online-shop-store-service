@@ -13,7 +13,6 @@ import java.util.UUID;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
 @Table(name = "items")
 public class Item {
 
@@ -34,7 +33,7 @@ public class Item {
     @ManyToOne
     private Vendor vendor;
 
-    @OneToMany
+    @OneToMany(cascade = {CascadeType.ALL})
     @JoinColumn(name = "item_id")
     private List<Multimedia> multimedia;
 
@@ -46,6 +45,14 @@ public class Item {
     )
     private List<Tag> tags;
 
-
-
+    @Builder
+    public Item(UUID id, String title, String description, Vendor vendor, List<Multimedia> multimedia, List<Tag> tags) {
+        this.id = id;
+        this.title = title;
+        this.description = description;
+        this.isAvailable = true;
+        this.vendor = vendor;
+        this.multimedia = multimedia;
+        this.tags = tags;
+    }
 }

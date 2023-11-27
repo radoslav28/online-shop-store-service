@@ -1,7 +1,7 @@
 package com.onlineshop.store.api.operations.vendor.getall;
 
 import com.onlineshop.store.api.base.ProcessorResult;
-import com.onlineshop.store.api.model.Vendor;
+import com.onlineshop.store.api.model.VendorModel;
 import lombok.*;
 
 import java.util.List;
@@ -12,5 +12,5 @@ import java.util.List;
 @AllArgsConstructor
 @Builder
 public class GetVendorsResult implements ProcessorResult {
-    private List<Vendor> vendors;
+    private List<VendorModel> vendorModels;
 }

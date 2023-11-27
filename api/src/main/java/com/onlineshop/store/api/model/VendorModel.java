@@ -9,11 +9,13 @@ import org.hibernate.validator.constraints.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Tag {
-
+public class VendorModel {
     @UUID
     private String id;
 
     @NotBlank
-    private String title;
+    private String name;
+
+    @NotBlank
+    private String phone;
 }
