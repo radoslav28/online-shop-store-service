@@ -92,7 +92,7 @@ public class ItemController {
 
     @Operation(summary = "Get items by tag", description = "Return list with all items with this tag")
     @GetMapping("/tag/{tagId}")
-    public ResponseEntity<GetItemsByTagResult> getItemsByTag (@PathVariable @UUID String tagId) {
+    public ResponseEntity<GetItemsByTagResult> getItemsByTag (@RequestParam @UUID String tagId) {
 
         GetItemsByTagInput input = GetItemsByTagInput
                 .builder()
@@ -110,15 +110,15 @@ public class ItemController {
     }
 
     @Operation(summary = "Change item's tags", description = "Update tags of item")
-    @PutMapping("/tags")
+    @PatchMapping(value = "/tags", consumes = "application/json-patch+json")
     public ResponseEntity<ChangeItemTagsResult> changeItemsTags(@RequestBody @Valid ChangeItemTagsInput input) {
 
         return new ResponseEntity<>(changeItemTags.process(input), HttpStatus.OK);
     }
 
     @Operation(summary = "Archive item", description = "Setting item's isAvailable field to false")
-    @PutMapping("/{itemId}")
-    public ResponseEntity<ArchiveItemResult> archiveItem (@PathVariable @UUID String itemId) {
+    @PostMapping("/archive")
+    public ResponseEntity<ArchiveItemResult> archiveItem (@RequestParam @UUID String itemId) {
 
         ArchiveItemInput input = ArchiveItemInput
                 .builder()
