@@ -13,7 +13,6 @@ import com.onlineshop.store.api.operations.item.update.UpdateItemInput;
 import com.onlineshop.store.api.operations.item.update.UpdateItemResult;
 import com.onlineshop.store.api.operations.multimedia.AddMultimediaToItemInput;
 import com.onlineshop.store.api.operations.multimedia.AddMultimediaToItemResult;
-import com.onlineshop.store.api.operations.multimedia.getbyitem.GetMultimediaByItemResult;
 import com.onlineshop.store.api.operations.tag.create.CreateTagInput;
 import com.onlineshop.store.api.operations.tag.create.CreateTagResult;
 import com.onlineshop.store.api.operations.tag.getall.GetTagsResult;
