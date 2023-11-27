@@ -10,7 +10,7 @@ import org.hibernate.validator.constraints.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class GetItemInput implements ProcessorInput {
+public class GetItemByIdInput implements ProcessorInput {
 
     @UUID
     @NotBlank

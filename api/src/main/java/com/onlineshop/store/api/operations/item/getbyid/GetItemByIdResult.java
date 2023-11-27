@@ -13,7 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class GetItemResult implements ProcessorResult {
+public class GetItemByIdResult implements ProcessorResult {
     private String id;
     private String title;
     private String description;
