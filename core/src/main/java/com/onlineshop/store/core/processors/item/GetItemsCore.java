@@ -2,9 +2,9 @@ package com.onlineshop.store.core.processors.item;
 
 import com.onlineshop.store.api.exceptions.ServiceUnavailableException;
 import com.onlineshop.store.api.model.ItemModel;
-import com.onlineshop.store.api.operations.item.getall.GetItemsInput;
-import com.onlineshop.store.api.operations.item.getall.GetItemsOperation;
-import com.onlineshop.store.api.operations.item.getall.GetItemsResult;
+import com.onlineshop.store.api.operations.item.get.all.GetItemsInput;
+import com.onlineshop.store.api.operations.item.get.all.GetItemsOperation;
+import com.onlineshop.store.api.operations.item.get.all.GetItemsResult;
 import com.onlineshop.store.persistence.entities.Item;
 import com.onlineshop.store.persistence.repositories.ItemRepository;
 import lombok.RequiredArgsConstructor;

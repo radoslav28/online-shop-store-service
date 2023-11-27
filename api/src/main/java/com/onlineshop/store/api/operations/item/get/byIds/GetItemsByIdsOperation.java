@@ -1,4 +1,4 @@
-package com.onlineshop.store.api.operations.item.getbyids;
+package com.onlineshop.store.api.operations.item.get.byIds;
 
 import com.onlineshop.store.api.base.Processor;
 

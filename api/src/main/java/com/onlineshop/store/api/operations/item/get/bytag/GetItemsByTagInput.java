@@ -1,4 +1,4 @@
-package com.onlineshop.store.api.operations.item.getbytag;
+package com.onlineshop.store.api.operations.item.get.bytag;
 
 import com.onlineshop.store.api.base.ProcessorInput;
 import jakarta.validation.constraints.NotBlank;

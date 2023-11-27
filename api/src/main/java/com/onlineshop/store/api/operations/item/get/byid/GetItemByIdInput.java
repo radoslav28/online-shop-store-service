@@ -1,4 +1,4 @@
-package com.onlineshop.store.api.operations.item.getbyid;
+package com.onlineshop.store.api.operations.item.get.byid;
 
 import com.onlineshop.store.api.base.ProcessorInput;
 import jakarta.validation.constraints.NotBlank;

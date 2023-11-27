@@ -1,4 +1,4 @@
-package com.onlineshop.store.api.operations.item.getbyids;
+package com.onlineshop.store.api.operations.item.get.bytag;
 
 import com.onlineshop.store.api.base.ProcessorResult;
 import com.onlineshop.store.api.model.ItemModel;
@@ -11,6 +11,6 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class GetItemsByIdsResult implements ProcessorResult {
+public class GetItemsByTagResult implements ProcessorResult {
     List<ItemModel> itemModels;
 }

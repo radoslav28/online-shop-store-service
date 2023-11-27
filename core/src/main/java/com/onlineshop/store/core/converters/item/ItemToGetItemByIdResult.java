@@ -3,7 +3,7 @@ package com.onlineshop.store.core.converters.item;
 import com.onlineshop.store.api.model.MultimediaModel;
 import com.onlineshop.store.api.model.TagModel;
 import com.onlineshop.store.api.model.VendorModel;
-import com.onlineshop.store.api.operations.item.getbyid.GetItemByIdResult;
+import com.onlineshop.store.api.operations.item.get.byid.GetItemByIdResult;
 import com.onlineshop.store.persistence.entities.Item;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.core.convert.ConversionService;
