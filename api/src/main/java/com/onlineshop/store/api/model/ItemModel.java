@@ -17,9 +17,9 @@ public class ItemModel {
 
     private String description;
 
-    private VendorModel vendorModel;
+    private VendorModel vendor;
 
-    private List<MultimediaModel> multimediaModels;
+    private List<MultimediaModel> multimedia;
 
-    private List<TagModel> tagModels;
+    private List<TagModel> tags;
 }

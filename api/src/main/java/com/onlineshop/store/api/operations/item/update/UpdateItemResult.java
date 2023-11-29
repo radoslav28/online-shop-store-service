@@ -17,7 +17,7 @@ public class UpdateItemResult implements ProcessorResult {
     private String id;
     private String title;
     private String description;
-    private VendorModel vendorModel;
-    private List<MultimediaModel> multimediaModels;
-    private List<TagModel> tagModels;
+    private VendorModel vendor;
+    private List<MultimediaModel> multimedia;
+    private List<TagModel> tags;
 }
